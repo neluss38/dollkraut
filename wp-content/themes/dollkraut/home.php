@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="page-wrapper page">
+<div data-index="0" class="page-wrapper page">
     <img src="<?php echo get_bloginfo('template_url') ?>/images/content/dollkraut-logo.png" class="home-image">
     </img>
 </div>

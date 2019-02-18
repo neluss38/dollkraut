@@ -1,4 +1,4 @@
-<div class="info-wrapper booking-band page">
+<div data-index="6" class="info-wrapper booking-band page">
     <div class="info-wrapper__book">
         <div class="info-wrapper__book-image info-wrapper__book-image--voyage">
         </div>

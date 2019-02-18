@@ -1,4 +1,4 @@
-<div class="info-wrapper music page">
+<div data-index="2" class="info-wrapper music page">
     <ul class="info-wrapper__music-list">
         <li class="info-wrapper__list-item info-wrapper__list-item--first">
             <a href="https://spoti.fi/1EN8n2p" class="info-wrapper__music info-wrapper__music--spotify">

@@ -9,7 +9,7 @@ const gulp = require('gulp');
 //this will instantly refresh
 const browserSync = require('browser-sync').create();
 
-let proxy = 'localhost:8888/dollkraut'
+let proxy = 'dollkraut.local'
 
 gulp.task('scss', () =>  {
 

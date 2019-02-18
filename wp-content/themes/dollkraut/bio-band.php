@@ -1,4 +1,4 @@
-<div class="bio-content bio-band page">
+<div data-index="4" class="bio-content bio-band page">
     <div class="bio-content__text-wrapper">
         <p class="bio-content__text">
             If there’s one thing that Dollkraut can’t stand, it’s predictability. For the past decade, bandleader Pascal Pinkert has passionately pursued musical unpredictability. As a result, the three-piece band has earned a reputation for delivering fuzzy, lo-fi and analogue-rich live performances that giddily sidestep conventions and proudly nestle in the cracks between genres.

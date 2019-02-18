@@ -17,32 +17,32 @@
     <body <?php body_class(); ?>>
         <header class="header">
             <div class="header-wrapper">
-                <ul>
+                <ul class="primary">
                     <li>
-                        <a class="menu-home">home</a>
+                        <a class="menu-home" data-index="0">home</a>
                     </li>
                     <li>
-                        <a href="https://www.residentadvisor.net/widget/eventlisting?dj=dollkraut&bgcolor=282425&libkcolor=93119f&textcolor=93119f&darkbuttons=true" class="tour">tour data</a>
+                        <a data-index="1" href="https://www.residentadvisor.net/widget/eventlisting?dj=dollkraut&bgcolor=282425&libkcolor=93119f&textcolor=93119f&darkbuttons=true" class="tour">tour data</a>
                     </li>
                     <li>
-                        <a class="music">music</a>
+                        <a data-index="2" class="music">music</a>
                     </li>
                     <li>
-                        <a class="bio submenu-title-bio">bio</a>
+                        <button class="bio submenu-title-bio">bio</button>
                         <span>
-                            <a class="bio-dj submenu-item-bio">dj</a>
+                            <a data-index="3" class="bio-dj submenu-item-bio">dj</a>
                         </span>
                         <span>
-                            <a class="bio-band submenu-item-bio">band</a>
+                            <a data-index="4" class="bio-band submenu-item-bio">band</a>
                         </span>
                     </li>
                     <li>
-                        <a class="bookings submenu-title-booking">bookings</a>
+                        <button class="bookings submenu-title-booking">bookings</button>
                         <span>
-                            <a class="booking-dj submenu-item-booking">dj</a>
+                            <a data-index="5" class="booking-dj submenu-item-booking">dj</a>
                         </span>
                         <span>
-                            <a class="booking-band submenu-item-booking">band</a>
+                            <a data-index="6" class="booking-band submenu-item-booking">band</a>
                         </span>
                     </li>
                 </ul>

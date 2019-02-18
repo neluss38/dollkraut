@@ -1,4 +1,4 @@
-<div class="bio-content bio-dj page">
+<div data-index="3" class="bio-content bio-dj page">
     <div class="bio-content__text-wrapper">
         <p class="bio-content__text">
             If there’s one thing that Dollkraut can’t stand, it’s predictability. For the past decade, Pascal Pinkert has passionately pursued musical unpredictability. In the process, he’s earned a reputation for being a DJ and producer whose fuzzy, lo-fi and analogue-rich approach giddily sidesteps conventions and proudly nestles in the cracks between genres.
