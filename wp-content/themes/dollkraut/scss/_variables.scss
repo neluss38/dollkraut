@@ -1,0 +1,44 @@
+//Colors
+$teunet-gray: #939393;
+$teunet-back: #FFFADE;
+$orange: #ffaf02;
+$light-gray: #bbbec1;
+$light-light-gray: #f9fcfc;
+$aqua-blue: #99d5c9;
+$blue: #47ddff;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$white: #fff;
+$gray: #757575;
+$black: #000;
+$light-blue: #00faff;
+$medium-light-blue: #84afbc;
+$light-yellow: #e0ddd2;
+$gold: #ddc492;
+$green: #a7e569;
+$red: #ff0400;
+$light-purple: #eddbff;
+$pink: #ff4cf3;
+$dark-purple: #353e4c;
+$light-aqua: #a8b3c4;
+$dollkraut-pink: #a31488;
+$dollkraut-grey: #b2b2b0;
+
+$intro-gradient1: #ffd900;
+$intro-gradient2: #ffaf00;
+
+
+
+//typography
+$header-font: 'Aver';
+$base-font: 'Aver';
+
+// Breakpoints
+// -------------------
+
+$breakpoints: (
+	'mobile': (max-width: 736px),
+	'tablet': (max-width: 1024px),
+	'desktop': (min-width: 1200px),
+);

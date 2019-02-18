@@ -1,0 +1,30 @@
+.info-wrapper__book-dj {
+
+    .info-wrapper__book-image {
+        background-image: url("../images/logos/voyage.png");
+        background-size: cover;
+        width: 300px;
+        height: 100px;
+        margin-left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin-top: 45%;
+        margin-bottom: 40%;
+
+        @media only screen and (max-width: 500px) {
+            width: 200px;
+            height: 66px;
+        }
+
+        a {
+            text-align: center;
+            font-size: 26px;
+            color: $dollkraut-grey;
+            font-family: 'Aver';
+            display: block;
+            width: 100%;
+            position: relative;
+            padding-top: 120px;
+            font-weight: bold;
+        }
+    }
+}
