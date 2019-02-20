@@ -17,6 +17,11 @@
             height: 80px;
             width: 240px;
 
+            &:hover {
+                background-image: url("../images/logos/voyage-hover.png");
+                cursor: pointer;
+            }
+
             @media only screen and (max-width: 400px) {
                 height: 60px;
                 width: 180px;
@@ -27,6 +32,12 @@
             background-image: url("../images/content/swamp-booking.png");
             width: 125px;
             height: 160px;
+            transition: ease-in-out 150ms;
+
+            &:hover {
+                background-image: url("../images/content/swamp-booking-hover.png");
+                cursor: pointer;
+            }
 
             @media only screen and (max-width: 400px) {
                 width: 94px;
@@ -44,5 +55,15 @@
         text-decoration: none;
         width: 100%;
         display: block;
+    }
+}
+
+.booking-band {
+    opacity: 0;
+    z-index: 1;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 100;
     }
 }

@@ -22,7 +22,7 @@
                         <a class="menu-home" data-index="0">home</a>
                     </li>
                     <li>
-                        <a data-index="1" href="https://www.residentadvisor.net/widget/eventlisting?dj=dollkraut&bgcolor=282425&libkcolor=93119f&textcolor=93119f&darkbuttons=true" class="tour">tour data</a>
+                        <a data-index="1"  class="tour">tour data</a>
                     </li>
                     <li>
                         <a data-index="2" class="music">music</a>

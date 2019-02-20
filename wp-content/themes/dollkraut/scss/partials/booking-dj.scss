@@ -9,6 +9,12 @@
         transform: translateX(-50%) translateY(-50%);
         margin-top: 45%;
         margin-bottom: 40%;
+        transition: ease-in-out 150ms;
+
+        &:hover {
+            background-image: url("../images/logos/voyage-hover.png");
+            cursor: pointer;
+        }
 
         @media only screen and (max-width: 500px) {
             width: 200px;
@@ -26,5 +32,15 @@
             padding-top: 120px;
             font-weight: bold;
         }
+    }
+}
+
+.booking-dj {
+    opacity: 0;
+    z-index: 1;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 100;
     }
 }

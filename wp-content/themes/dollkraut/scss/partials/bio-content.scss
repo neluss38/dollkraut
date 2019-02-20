@@ -3,10 +3,10 @@
     overflow: scroll;
     overflow-x: hidden;
     width: 600px;
-    float: right;
+    position: absolute;
     margin-top: 45vh;
     transform: translateY(-45%);
-    margin-right: 10%;
+    right: 10%;
     background-image: url("../images/content/border.png");
     background-size: cover;
 
@@ -45,5 +45,25 @@
                 font-size: 17px;
             }
         }
+    }
+}
+
+.bio-dj {
+    opacity: 0;
+    z-index: 1;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 100;
+    }
+}
+
+.bio-band {
+    opacity: 0;
+    z-index: 1;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 100;
     }
 }

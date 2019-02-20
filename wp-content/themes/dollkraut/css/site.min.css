@@ -67,16 +67,20 @@ html, body {
     .header-wrapper ul li {
       list-style: none;
       width: 100%; }
-      .header-wrapper ul li a {
+      .header-wrapper ul li a, .header-wrapper ul li button {
+        background: 0;
+        border: 0;
         color: #b2b2b0;
+        padding: 0;
         text-decoration: none;
         font-weight: bold;
         font-size: 30px;
+        outline: 0;
         line-height: 70px;
         font-family: 'Aver', serif;
         text-transform: uppercase;
         transition: ease-in-out 150ms; }
-        .header-wrapper ul li a:hover {
+        .header-wrapper ul li a:hover, .header-wrapper ul li button:hover {
           cursor: pointer;
           color: #ddd; }
       .header-wrapper ul li span {
@@ -161,10 +165,10 @@ html, body {
   overflow: scroll;
   overflow-x: hidden;
   width: 600px;
-  float: right;
+  position: absolute;
   margin-top: 45vh;
   transform: translateY(-45%);
-  margin-right: 10%;
+  right: 10%;
   background-image: url("../images/content/border.png");
   background-size: cover; }
   @media only screen and (max-width: 1250px) {
@@ -197,6 +201,20 @@ html, body {
         .bio-content .bio-content__text-wrapper .bio-content__text {
           font-size: 17px; } }
 
+.bio-dj {
+  opacity: 0;
+  z-index: 1; }
+  .bio-dj.is-active {
+    opacity: 1;
+    z-index: 100; }
+
+.bio-band {
+  opacity: 0;
+  z-index: 1; }
+  .bio-band.is-active {
+    opacity: 1;
+    z-index: 100; }
+
 .info-wrapper__book {
   width: 100%;
   float: left; }
@@ -211,6 +229,9 @@ html, body {
       background-image: url("../images/logos/voyage.png");
       height: 80px;
       width: 240px; }
+      .info-wrapper__book .info-wrapper__book-image--voyage:hover {
+        background-image: url("../images/logos/voyage-hover.png");
+        cursor: pointer; }
       @media only screen and (max-width: 400px) {
         .info-wrapper__book .info-wrapper__book-image--voyage {
           height: 60px;
@@ -218,7 +239,11 @@ html, body {
     .info-wrapper__book .info-wrapper__book-image--swamp {
       background-image: url("../images/content/swamp-booking.png");
       width: 125px;
-      height: 160px; }
+      height: 160px;
+      transition: ease-in-out 150ms; }
+      .info-wrapper__book .info-wrapper__book-image--swamp:hover {
+        background-image: url("../images/content/swamp-booking-hover.png");
+        cursor: pointer; }
       @media only screen and (max-width: 400px) {
         .info-wrapper__book .info-wrapper__book-image--swamp {
           width: 94px;
@@ -233,6 +258,13 @@ html, body {
     width: 100%;
     display: block; }
 
+.booking-band {
+  opacity: 0;
+  z-index: 1; }
+  .booking-band.is-active {
+    opacity: 1;
+    z-index: 100; }
+
 .info-wrapper__book-dj .info-wrapper__book-image {
   background-image: url("../images/logos/voyage.png");
   background-size: cover;
@@ -241,7 +273,11 @@ html, body {
   margin-left: 50%;
   transform: translateX(-50%) translateY(-50%);
   margin-top: 45%;
-  margin-bottom: 40%; }
+  margin-bottom: 40%;
+  transition: ease-in-out 150ms; }
+  .info-wrapper__book-dj .info-wrapper__book-image:hover {
+    background-image: url("../images/logos/voyage-hover.png");
+    cursor: pointer; }
   @media only screen and (max-width: 500px) {
     .info-wrapper__book-dj .info-wrapper__book-image {
       width: 200px;
@@ -256,6 +292,13 @@ html, body {
     position: relative;
     padding-top: 120px;
     font-weight: bold; }
+
+.booking-dj {
+  opacity: 0;
+  z-index: 1; }
+  .booking-dj.is-active {
+    opacity: 1;
+    z-index: 100; }
 
 .info-wrapper__music-list {
   width: 100%;
@@ -322,12 +365,20 @@ html, body {
         .info-wrapper__music-list .info-wrapper__list-item .info-wrapper__music--soundcloud:hover {
           background-image: url("../images/logos/Soundcloud-hover.png"); }
 
+.music-content {
+  opacity: 0;
+  position: absolute;
+  z-index: 1; }
+  .music-content.is-active {
+    opacity: 1;
+    z-index: 100; }
+
 .info-wrapper {
   background-image: url("../images/content/border.png");
   width: 35%;
   background-size: cover;
   display: block;
-  position: relative;
+  position: absolute;
   float: right;
   margin-right: 10%;
   margin-left: 55%;
@@ -365,13 +416,25 @@ html, body {
       cursor: pointer;
       background-image: url("../images/content/swamp-booking-hover.png"); }
 
+.tour-data {
+  opacity: 0;
+  z-index: 1; }
+  .tour-data.is-active {
+    opacity: 1;
+    z-index: 100; }
+
 .page-wrapper {
   background-color: #fff;
   width: 100%;
   height: 100vh;
   padding: 50px;
   box-sizing: border-box;
-  position: relative; }
+  position: absolute;
+  opacity: 0;
+  z-index: 1; }
+  .page-wrapper.is-active {
+    opacity: 1;
+    z-index: 100; }
   @media only screen and (max-width: 650px) {
     .page-wrapper {
       padding: 0; } }
@@ -392,8 +455,6 @@ html, body {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%); } }
-    .page-wrapper .home-image.active {
-      display: none; }
 
 /* No files to import found in scss//* */
 /* No files to import found in lib//* */
