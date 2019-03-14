@@ -24,6 +24,16 @@ $(document).ready(function () {
             });
         }
 
+
+    removemenutoggle();
+        function removemenutoggle() {
+            $('.header-wrapper .primary a').click(function() {
+                $('.header-wrapper').removeClass('active');
+                $header.removeClass('active');
+                $stripe.removeClass('active');
+            });
+        }
+
     submenutogglebio();
         function submenutogglebio() {
             $menutitlebio.click(function() {
@@ -42,7 +52,7 @@ $(document).ready(function () {
     $pages = $('.page');
 
     $links.each(function(index) {
-        
+
         $(this).click(function(e){
 
             // stop link from going anywhere
@@ -57,10 +67,10 @@ $(document).ready(function () {
 
             // remove active class from all active pages
             $('.page').removeClass('is-active');
-            
+
             // get index of this menu item
             $index = $(this).data('index');
-            
+
             // loop over all pages, find the matching index, add active class
             $('.page').each(function() {
                 if($(this).data('index') == $index) {
