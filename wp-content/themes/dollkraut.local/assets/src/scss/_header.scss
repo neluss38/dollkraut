@@ -84,6 +84,7 @@
                 font-weight: 700;
                 font-family: 'Aver', serif;
                 position: absolute;
+                width: 0;
 
                 a {
                     opacity: 0;
@@ -136,22 +137,12 @@
                 background-size: cover;
                 background-image: url("../../src/img/icons/facebook.png");
                 transition: ease-in-out 150ms;
-
-                &:hover {
-                    cursor: pointer;
-                    background-image: url("../../src/img/icons/facebook-white.png");
-                }
             }
 
             &--instagram {
                 a {
                     background-image: url("../../src/img/icons/instagram.png");
                     transition: ease-in-out 150ms;
-
-                    &:hover {
-                        cursor: pointer;
-                        background-image: url("../../src/img/icons/instagram-white.png");
-                    }
                 }
             }
         }
