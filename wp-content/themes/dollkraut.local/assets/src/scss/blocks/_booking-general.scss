@@ -1,0 +1,47 @@
+.info-wrapper {
+    background-image: url("../../src/img/content/border.png");
+    width: 35%;
+    background-size: cover;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: 1250px) {
+        position: fixed;
+        transform: translateY(0) translateX(0);
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+        float: left;
+        left: 50px;
+        top: 50px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        width: calc(100% - 50px);
+        left: 25px;
+    }
+
+    &--booking {
+        position: relative;
+        margin-left: 50%;
+        margin-top: 50%;
+        background-image: url("../../src/img/content/swamp-booking.png");
+        background-size: cover;
+        width: 230px;
+        height: 290px;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        transition: ease-in-out 150ms;
+
+        @media only screen and (max-width: 450px) {
+            width: 160px;
+            height: 200px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-image: url("../../src/img/content/swamp-booking-hover.png");
+        }
+    }
+}

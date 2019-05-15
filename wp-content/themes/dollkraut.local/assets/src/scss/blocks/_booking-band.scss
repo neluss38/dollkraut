@@ -1,0 +1,79 @@
+.booking-band {
+    opacity: 0;
+    z-index: 1;
+    height: 600px;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .info-wrapper__book {
+        width: 100%;
+        float: left;
+        position: relative;
+        height: 50%;
+        display: flex;
+        align-items: center;
+
+        .info-wrapper__book__flex {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+
+            .info-wrapper__book-image {
+                background-size: cover;
+                display: block;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+                &--voyage {
+                    background-image: url("../../src/img/logos/voyage.png");
+                    height: 80px;
+                    width: 240px;
+                    transition: ease-in-out 150ms;
+
+                    &:hover {
+                        background-image: url("../../src/img/logos/voyage-hover.png");
+                        cursor: pointer;
+                    }
+
+                    @media only screen and (max-width: 400px) {
+                        height: 60px;
+                        width: 180px;
+                    }
+                }
+
+                &--swamp {
+                    margin-top: 0;
+                    background-image: url("../../src/img/content/swamp-booking.png");
+                    width: 125px;
+                    height: 160px;
+                    transition: ease-in-out 150ms;
+
+                    &:hover {
+                        background-image: url("../../src/img/content/swamp-booking-hover.png");
+                        cursor: pointer;
+                    }
+
+                    @media only screen and (max-width: 400px) {
+                        width: 94px;
+                        height: 120px;
+                    }
+                }
+            }
+
+            .info-wrapper__book-text {
+                text-align: center;
+                color: $dollkraut-grey;
+                font-size: 16px;
+                font-family: 'Aver';
+                font-weight: bold;
+                text-decoration: none;
+                width: 100%;
+                display: block;
+                margin-top: 15px;
+            }
+        }
+    }
+}

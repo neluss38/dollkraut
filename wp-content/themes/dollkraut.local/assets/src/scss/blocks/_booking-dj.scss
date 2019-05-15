@@ -1,0 +1,55 @@
+.booking-dj {
+    opacity: 0;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .info-wrapper__book-dj {
+        position: relative;
+        width: 300px;
+
+        @media only screen and (max-width: 500px) {
+            width: 200px;
+        }
+
+        .info-wrapper__book-image {
+            display: block;
+            position: relative;
+            background-image: url("../../src/img//logos/voyage.png");
+            background-size: cover;
+            width: 300px;
+            height: 100px;
+            transition: ease-in-out 150ms;
+
+            &:hover {
+                background-image: url("../../src/img/logos/voyage-hover.png");
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 500px) {
+                width: 200px;
+                height: 66px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            color: $dollkraut-grey;
+            font-family: 'Aver';
+            display: block;
+            width: 100%;
+            position: relative;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+}
