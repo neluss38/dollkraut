@@ -70,6 +70,7 @@ h6 {
 
 h1 {
 	@include h1(); 
+	font-weight: 700;
 }
 
 h2 {

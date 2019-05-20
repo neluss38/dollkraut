@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="describtion" content="official website of the dollkraut band and DJ, order here"/>
+        <meta name="description" content="official website of the dollkraut band and DJ, order here"/>
         <meta charset="utf-8"/>
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/assets/dist/img/icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/assets/dist/img/icons/favicon-32x32.png">
@@ -18,7 +18,6 @@
         <link rel="mask-icon" href="<?php bloginfo('template_directory'); ?>/assets/dist/img/icons/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <title>dollkraut</title>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>

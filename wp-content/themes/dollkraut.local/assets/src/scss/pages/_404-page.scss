@@ -1,0 +1,39 @@
+.not-found-block {
+	padding: 30px;
+	width: 300px;
+	position: fixed;
+	left: 60%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    background-image: url("../../src/img/backgrounds/menu-background.png");
+    background-size: cover;
+
+    @include respond-to('tablet') {
+    	left: 50%;
+    }
+
+	&__image {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+	}
+
+	h1 {
+		text-align: center;
+		color: $dollkraut-grey;
+	}
+
+	p {
+		text-align: center;
+		color: $dollkraut-grey;
+		font-weight: 700;
+	}
+
+	a {
+		color: black;
+		text-decoration: underline;
+		color: $dollkraut-grey;
+		font-weight: 700;
+	}
+}

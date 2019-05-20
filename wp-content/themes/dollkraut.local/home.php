@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div data-index="0" class="page-wrapper is-active page">
-    <img src="<?php echo get_bloginfo('template_url') ?>/assets/src/img/content/dollkraut-logo.png" class="home-image" alt="home page background image"></img>
+    <img src="<?php echo get_bloginfo('template_url') ?>/assets/src/img/content/dollkraut-logo.png" class="home-image" alt="home page background image">
 </div>
 
 <?php
