@@ -45,7 +45,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "gulp-message": "^1.0.4",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "selectric": "^1.13.0",
     "swiper": "^4.5.0"
   }
