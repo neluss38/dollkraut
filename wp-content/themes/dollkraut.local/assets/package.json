@@ -47,6 +47,6 @@
     "gulp-message": "^1.0.4",
     "jquery": "^3.4.0",
     "selectric": "^1.13.0",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
