@@ -37,7 +37,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "node-sass": "^4.11.0",
     "postcss-preset-env": "^6.5.0",
     "through2": "^3.0.1"
